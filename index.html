@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hossein Zareinejad | Software Engineer & AI Researcher</title>
+    <!-- Geist Font -->
+    <link href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-sans/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <nav class="navbar">
+        <div class="nav-content">
+            <span class="brand">HZ.</span>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Selected Work</a>
+                <a href="Hossein_Zareinejad.pdf" class="btn btn-secondary">Download CV</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="eyebrow">Computer Engineering · Amirkabir University</p>
+                    <h1 class="headline">Building intelligent systems for complex environments.</h1>
+                    <p class="subtext">
+                        I specialize in Natural Language Processing, Large Language Models, and perception systems for autonomous driving. My focus is on turning research into scalable production software.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Selected Work</a>
+                        <a href="https://github.com/HosseinZareinejad" target="_blank" class="btn btn-outline">
+                            <i class="ph ph-github-logo"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <!-- Abstract geometric element -->
+                    <div class="abstract-shape"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Research & Engineering Experience</h2>
+                </div>
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <article class="timeline-item">
+                        <div class="timeline-meta">
+                            <span class="date-mark">Mar 2026 — Present</span>
+                            <strong>Amirkabir University</strong>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="role-title">Undergraduate Researcher: LLM Evaluation & Agents</p>
+                            <ul class="clean-list">
+                                <li>Curated multi-domain benchmark datasets for evaluating foundation models like LLaMA and Qwen.</li>
+                                <li>Developed agentic decision-making frameworks for autonomous vehicles integrating with ROS2.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <!-- Item 2 -->
+                    <article class="timeline-item">
+                        <div class="timeline-meta">
+                            <span class="date-mark">May 2026 — Present</span>
+                            <strong>Amirkabir University</strong>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="role-title">Undergraduate Researcher: Autonomous Driving</p>
+                            <ul class="clean-list">
+                                <li>Benchmarked autonomous vehicle control models within the CARLA simulation framework.</li>
+                                <li>Integrated perception nodes with Autoware to evaluate routing and lane-keeping behavior.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Item 3 -->
+                    <article class="timeline-item">
+                        <div class="timeline-meta">
+                            <span class="date-mark">Jul 2025 — Oct 2025</span>
+                            <strong>Ariana Shabake Afaq</strong>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="role-title">Frontend Developer</p>
+                            <ul class="clean-list">
+                                <li>Built responsive web applications using React, Next.js, and Tailwind CSS.</li>
+                                <li>Integrated GraphQL and RESTful APIs with advanced caching and RTL layout support.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section alt-bg" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Selected Work</h2>
+                </div>
+                <div class="bento-grid">
+                    <article class="bento-card col-span-2">
+                        <h3>VectorID Engine</h3>
+                        <p>Identity resolution platform using Multilingual Sentence Transformers and Qdrant vector database. Achieved matching in O(log N) using Cosine Similarity and Jaro-Winkler scoring.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>FastAPI</span><span>Qdrant</span><span>React</span>
+                        </div>
+                    </article>
+                    
+                    <article class="bento-card">
+                        <h3>GraphNLP</h3>
+                        <p>High-performance NLP pipeline for abstractive summarization (BART) and Named Entity Recognition (NER), featuring an interactive Vis.js graph.</p>
+                        <div class="tech-stack">
+                            <span>Hugging Face</span><span>SpaCy</span>
+                        </div>
+                    </article>
+
+                    <article class="bento-card">
+                        <h3>FleetSim MAPF</h3>
+                        <p>Multi-agent pathfinding simulator with 3D Space-Time A* and Conflict-Based Search for dynamic real-time obstacle re-planning.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>Pygame</span>
+                        </div>
+                    </article>
+
+                    <article class="bento-card col-span-2">
+                        <h3>MelodyChat Android</h3>
+                        <p>Full-stack Kotlin app with Jetpack Compose UI, Ktor WebSocket backend, and Room persistence for real-time music streaming and chat.</p>
+                        <div class="tech-stack">
+                            <span>Kotlin</span><span>Jetpack Compose</span><span>Ktor</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <div class="footer-brand">
+                    <span class="brand">HZ.</span>
+                    <p>Hossein Zareinejad</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:zarenejad83@gmail.com"><i class="ph ph-envelope-simple"></i> zarenejad83@gmail.com</a>
+                    <a href="https://linkedin.com/in/hossein-zareinejad" target="_blank"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
+                    <a href="https://github.com/HosseinZareinejad" target="_blank"><i class="ph ph-github-logo"></i> GitHub</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
