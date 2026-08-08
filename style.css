@@ -424,3 +424,77 @@ h1, h2, h3 {
         display: none;
     }
 }
+
+/* About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* TA & Education Grid */
+.ta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .ta-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.ta-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.ta-card strong {
+    color: var(--accent);
+    font-size: 1.125rem;
+}
+
+.ta-card span {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.supervisor {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    margin-top: 0.25rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.skills-cluster {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
