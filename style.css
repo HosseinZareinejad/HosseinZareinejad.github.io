@@ -211,30 +211,12 @@ h1, h2, h3 {
     position: relative;
 }
 
-.abstract-shape {
+.hero-image {
     width: 100%;
     height: 100%;
-    background: linear-gradient(145deg, rgba(59, 130, 246, 0.2) 0%, rgba(9, 9, 11, 0) 100%);
-    border: 1px solid var(--border);
+    object-fit: cover;
     border-radius: var(--radius);
-    position: relative;
-    overflow: hidden;
-}
-
-.abstract-shape::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at center, rgba(59,130,246,0.15) 0%, transparent 50%);
-    animation: rotate 20s linear infinite;
-}
-
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    border: 1px solid var(--border);
 }
 
 /* Timeline */
