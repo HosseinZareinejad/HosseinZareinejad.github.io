@@ -19,6 +19,7 @@
             <span class="brand">Hossein Zareinejad</span>
             <div class="nav-links">
                 <a href="#about">About</a>
+                <a href="#manuscripts">Manuscripts</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Work</a>
                 <a href="#skills">Skills</a>
@@ -59,18 +60,16 @@
                 </div>
                 <div>
                     <p class="subtext" style="max-width: 100%;">
-                        BSc student in Computer Engineering with hands-on experience in NLP, LLM evaluation, and
-                        building production-ready pipelines. Proficient in developing Retrieval-Augmented Generation
-                        (RAG) systems, implementing conversational agents, and fine-tuning foundation models for
-                        domain-specific applications. Experienced in multi-domain data curation and diagnosing model
-                        behaviors like hallucinations. Highly motivated to solve engineering challenges in scaling large
-                        language models, processing high-quality datasets, and deploying intelligent systems using
-                        clean-code practices.
+                        Final-year Computer Engineering student researching how to measure what language models
+                        actually know, across Persian and multimodal evaluation, and applying LLM agents to autonomous
+                        driving. First author of one paper under review and two manuscripts in preparation.
                     </p>
                     <div class="research-interests">
                         <p class="eyebrow" style="margin-top: 2rem;">Research Interests</p>
                         <div class="tech-stack">
                             <span>Large Language Models (LLMs)</span>
+                            <span>Multimodal LLMs</span>
+                            <span>Visual Question Answering</span>
                             <span>RAG Architectures</span>
                             <span>Agentic Systems</span>
                             <span>LLM Benchmarking &amp; Evaluation</span>
@@ -79,6 +78,20 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Manuscripts Section -->
+        <section class="section" id="manuscripts">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Manuscripts</h2>
+                </div>
+                <ul class="clean-list">
+                    <li><strong>H. Zareinejad</strong>, S. Momtazi. &ldquo;How Much Do Large Language Models Know About Iranian Professional Knowledge? A Debiased Zero-Shot Evaluation on Persian Licensing and Graduate Entrance Examinations.&rdquo; Under review at <em>Natural Language Processing</em> (Cambridge University Press).</li>
+                    <li><strong>H. Zareinejad</strong>, M. Ghayoomi. &ldquo;Contextual Language Models for Persian Word Sense Induction: Monolingual or Multilingual, and Does a Second Language Help?&rdquo; Manuscript in preparation; not yet submitted.</li>
+                    <li><strong>H. Zareinejad</strong>, S. Momtazi. &ldquo;What Vision-Language Models Gain from Seeing: A Comparison of Iranian and World Cultural Heritage.&rdquo; Manuscript in preparation; not yet submitted.</li>
+                </ul>
             </div>
         </section>
 
@@ -91,21 +104,36 @@
                 <div class="timeline">
                     <article class="timeline-item">
                         <div class="timeline-meta">
-                            <span class="date-mark">Sep 2026 — Present</span>
-                            <strong>Research Project</strong>
-                            <span class="supervisor">Under <a href="https://scholar.google.com/citations?user=H5TE8QYAAAAJ" target="_blank">Dr. Masood Ghayoomi</a></span>
+                            <span class="date-mark">Oct 2026 — Present</span>
+                            <strong>Amirkabir University of Technology</strong>
+                            <span class="supervisor">Under <a href="https://scholar.google.com/citations?user=N-WqXykAAAAJ" target="_blank">Dr. Saeedeh Momtazi</a></span>
                         </div>
                         <div class="timeline-body">
-                            <p class="role-title">Researcher: Cross-lingual &amp; Contextual Word Sense Induction</p>
+                            <p class="role-title">Undergraduate Researcher: Multimodal LLM Evaluation &amp; Benchmarking</p>
                             <ul class="clean-list">
-                                <li>Ported a legacy Python 2 Word Sense Induction pipeline to Python 3 and verified it against the official SemEval-2010 Task 14 scorers; evaluated MUSE/VecMap cross-lingual embedding alignment on Persian and English and found no improvement.</li>
-                                <li>Benchmarked BERT-base, ParsBERT, mBERT and XLM-R (224 configurations) against a Word2Vec baseline, raising the harmonic mean of V-measure and F-score from 36.5 to 55.9 on Persian and from 24.7 to 47.9 on English; language-specific models ranked first among base-size models.</li>
+                                <li>Built a Persian visual question answering benchmark comparing Iranian and world cultural heritage (30,725 questions, about 11,000 images) and evaluated 10 open-weight vision-language models with and without images.</li>
+                                <li>On matched comparisons, Iranian items scored about 13 points lower (95% CI 12.4–14.3) despite scoring about 4 points higher without images: the image added about 31 points for Iranian items and 48 for world items.</li>
+                                <li>Used no-image runs to find question types answerable without images, then rebuilt them in a second release.</li>
                             </ul>
                         </div>
                     </article>
                     <article class="timeline-item">
                         <div class="timeline-meta">
-                            <span class="date-mark">Mar 2026 — Present</span>
+                            <span class="date-mark">Aug 2026 — Oct 2026</span>
+                            <strong>Institute for Humanities and Cultural Studies</strong>
+                            <span class="supervisor">Under <a href="https://scholar.google.com/citations?user=H5TE8QYAAAAJ" target="_blank">Dr. Masood Ghayoomi</a></span>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="role-title">Researcher: Cross-lingual &amp; Contextual Word Sense Induction</p>
+                            <ul class="clean-list">
+                                <li>Compared 13 models (static vectors, masked language models, sentence encoders, generative LLMs) on 20 ambiguous Persian words and SemEval-2010 Task 14, raising the harmonic mean of V-measure and F-score over Word2Vec from 35.3 to 54.7 on Persian and from 24.5 to 47.5 on English.</li>
+                                <li>Showed that BERT beats every multilingual model on English by 3–16 points while the best multilingual encoders match ParsBERT on Persian, and that a second language helped in none of three forms.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-meta">
+                            <span class="date-mark">Mar 2026 — Aug 2026</span>
                             <strong>Amirkabir University of Technology</strong>
                             <span class="supervisor">Under <a href="https://scholar.google.com/citations?user=N-WqXykAAAAJ" target="_blank">Dr. Saeedeh Momtazi</a></span>
                         </div>
@@ -114,7 +142,7 @@
                             <ul class="clean-list">
                                 <li>Built a 5,793-question Persian multiple-choice benchmark from official Iranian exams (law, medicine, psychology, finance, Islamic studies, art), including an OCR-based PDF-to-JSON pipeline and checks of every question against the source booklets.</li>
                                 <li>Evaluated 14 open-weight LLMs (Gemma, Qwen, Llama, and Persian-adapted models) with lm-evaluation-harness and vLLM, using two zero-shot protocols: option-label scoring averaged over cyclic option permutations to remove position bias, and reason-then-score.</li>
-                                <li>Ran paired statistical analyses (McNemar with Holm correction, bootstrap CIs, multi-seed runs) and found that Persian adaptation did not improve accuracy over the unadapted base models; first-author paper in preparation.</li>
+                                <li>Ran paired statistical analyses (McNemar with Holm correction, bootstrap CIs, multi-seed runs) and found that the Persian fine-tunes of Llama 3 and Gemma 3 did not improve accuracy over their base models; first-author paper under review at <em>Natural Language Processing</em> (Cambridge University Press).</li>
                             </ul>
                         </div>
                     </article>
@@ -299,13 +327,13 @@
                     <div class="skills-cluster">
                         <p class="eyebrow">Models</p>
                         <div class="tech-stack">
-                            <span>LLaMA</span><span>Qwen</span><span>Gemma</span><span>Mistral</span><span>BERT</span><span>XLM-R</span><span>ParsBERT</span>
+                            <span>Llama</span><span>Qwen</span><span>Gemma</span><span>Mistral</span><span>InternVL</span><span>Aya</span><span>BERT</span><span>XLM-R</span><span>ParsBERT</span>
                         </div>
                     </div>
                     <div class="skills-cluster">
                         <p class="eyebrow">Evaluation &amp; Data</p>
                         <div class="tech-stack">
-                            <span>LLM Benchmarking</span><span>Statistical Significance Testing (McNemar, Holm, Bootstrap CIs)</span><span>OCR-based Data Pipelines</span><span>Text Preprocessing</span>
+                            <span>LLM &amp; Vision-Language Benchmarking</span><span>Statistical Significance Testing (McNemar, Holm, Bootstrap &amp; Cluster Bootstrap CIs)</span><span>OCR-based Data Pipelines</span><span>Text Preprocessing</span>
                         </div>
                     </div>
                     <div class="skills-cluster">
@@ -326,7 +354,7 @@
                     <div class="skills-cluster">
                         <p class="eyebrow">Languages</p>
                         <div class="tech-stack">
-                            <span>Persian: Native</span><span>English: Full Professional Proficiency</span>
+                            <span>Persian: Native</span><span>English: Full Professional Proficiency (TOEFL iBT scheduled for 9 December 2026)</span>
                         </div>
                     </div>
                 </div>
